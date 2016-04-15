@@ -5,8 +5,7 @@ class PlaysController < ApplicationController
     @plays = Play.all.order("created_at DESC")
   end 
 
-  def show
-    
+  def show 
   end 
 
   def new 
@@ -23,6 +22,23 @@ class PlaysController < ApplicationController
       render 'new'
     end 
   end
+
+  def edit 
+  end 
+
+  #Create and Update deal with database
+  def update 
+    if @play.update(play_params)
+      redirect_to play_path(@play)
+    else
+      render 'edit' 
+    end
+  end
+
+  def destroy
+    @play.destroy 
+    redirect_to root_path
+  end 
 
   private 
 
