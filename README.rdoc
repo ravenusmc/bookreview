@@ -4,4 +4,4 @@
 
 == GEMS
 
-bootstrap, simple_form
+bootstrap, simple_form, Devise 
