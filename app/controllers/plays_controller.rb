@@ -9,7 +9,7 @@ class PlaysController < ApplicationController
   end 
 
   def new 
-    @play = current_user.Play.build 
+    @play = current_user.plays.build
   end 
 
   #ensures that the item is added to the database
