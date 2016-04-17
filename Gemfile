@@ -48,5 +48,6 @@ end
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'devise'
+gem "paperclip"
 
 
