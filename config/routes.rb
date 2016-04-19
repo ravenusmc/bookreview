@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  resources :plays
+
+  #reviews is nested into plays since they fall under them. 
+  resources :plays do
+    resources :reviews
+  end 
 
   root "plays#index" 
   # The priority is based upon order of creation: first created -> highest priority.
