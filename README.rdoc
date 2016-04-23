@@ -1,6 +1,6 @@
 == README
 
-  This is a project that will contain books and reviews on those books. 
+  This is a project that will contain books and reviews on those books. This app is completed but I do not think that it will ever be played online. However, I did learn and take ideas from the building of this app and want to try and build an app with the skills I used in this app. 
 
 == GEMS
 
